@@ -23,10 +23,17 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+# Ruby on Rails Development Course Lecture 246
+# image uploader gem
+gem 'carrierwave'
+# image resizing gem
+gem 'mini_magick'
+# work with images in production
+gem 'fog'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # Ruby on Rails Devlopment Course: due to a conflict, turbolinks is commented out
 #  - it seems like no problem with Rails 5. So uncommenting.
-#gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
