@@ -31,7 +31,7 @@ gem 'mini_magick'
 # work with images in production
 gem 'fog'
 # help in Q&A Section
-gem 'fog-aws'
+# gem 'fog-aws'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # Ruby on Rails Devlopment Course: due to a conflict, turbolinks is commented out
 #  - it seems like no problem with Rails 5. So uncommenting.
