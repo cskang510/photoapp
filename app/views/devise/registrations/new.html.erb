@@ -1,4 +1,4 @@
-<script language="javascript">
+<script language="Javascript">
   Stripe.setPublishableKey("<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
 </script>
 
@@ -27,7 +27,7 @@
     <%= f.password_field :password_confirmation, autocomplete: 'current-password', class: 'form-control' %>
   </div>
 
-  <%= fields_for(:payment) do |p| %>
+  <%= fields_for( :payment ) do |p| %>
     <div class="row col-md-12">
       <div class="form-group col-md-4 no-left-pedding">
         <%= p.label :card_number, "Card Number", data: {stripe: 'label'} %>
@@ -57,8 +57,7 @@
       </div>
     </div>
   <% end %>
-    <%= f.submit t('.sign_up'), class: 'btn btn-primary' %>
-  </div>
+  <%= f.submit t('.sign_up', :default => "Sign up"), class: 'btn btn-primary' %>
 <% end %>
 
 <%= render 'devise/shared/links' %>
